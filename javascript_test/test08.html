@@ -1,0 +1,15 @@
+<script>
+	var foo = {
+		name : 'foo',
+		age : 30,
+		major : 'computer science'
+	};
+
+	var prop;
+	for ( prop in foo ) {
+		console.log(prop, foo[prop]);
+		//prop 변수에 foo객체의 프로퍼티가 하나씩 할당된다.
+		console.log(prop, foo['prop']);
+		//foo 객체에 prop 프로퍼티가 없기 때문에 unfined 처리가 된다
+	}
+</script>
